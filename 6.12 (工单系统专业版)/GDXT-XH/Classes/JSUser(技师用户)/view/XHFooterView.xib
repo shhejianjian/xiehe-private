@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XHFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOB-An-tOa">
+                    <rect key="frame" x="20" y="50" width="280" height="50"/>
+                    <color key="backgroundColor" red="0.1529411765" green="0.64705882349999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="PT3-9F-RpI"/>
+                    </constraints>
+                    <state key="normal" title="领料"/>
+                    <connections>
+                        <action selector="lingliaoBtnDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="sB5-HJ-xFM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="UOB-An-tOa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="4hq-cJ-KMJ"/>
+                <constraint firstItem="UOB-An-tOa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="5mh-4A-0QU"/>
+                <constraint firstItem="UOB-An-tOa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jf5-Vb-i7y"/>
+                <constraint firstItem="UOB-An-tOa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kxe-Gs-AjP"/>
+                <constraint firstAttribute="trailing" secondItem="UOB-An-tOa" secondAttribute="trailing" constant="20" id="nLO-dz-bFV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="jf5-Vb-i7y"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="footerButton" destination="UOB-An-tOa" id="Fi1-cn-sql"/>
+            </connections>
+        </view>
+    </objects>
+</document>

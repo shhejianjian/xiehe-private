@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XHWarnDetailViewController">
+            <connections>
+                <outlet property="leftViewBtn" destination="c7K-RE-DbD" id="LdW-Vr-WTQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="warnDetailTableView" destination="pPa-q7-vIv" id="doS-KE-VFp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jq4-Ma-pH7">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工单详情" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXu-eX-60H">
+                            <rect key="frame" x="60" y="15" width="200" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="LVI-eC-N5O"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7K-RE-DbD">
+                            <rect key="frame" x="8" y="25" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="1Ut-Ja-RMy"/>
+                                <constraint firstAttribute="width" constant="25" id="aUw-7r-b8y"/>
+                            </constraints>
+                            <state key="normal" title="左">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="DTN-pV-XBU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1529411765" green="0.64705882349999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="PXu-eX-60H" secondAttribute="trailing" constant="60" id="0cg-Ec-9JZ"/>
+                        <constraint firstItem="PXu-eX-60H" firstAttribute="leading" secondItem="Jq4-Ma-pH7" secondAttribute="leading" constant="60" id="550-yd-4dh"/>
+                        <constraint firstItem="PXu-eX-60H" firstAttribute="baseline" secondItem="c7K-RE-DbD" secondAttribute="baseline" constant="11" id="APQ-QF-urR"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="Dpf-f0-JrE"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="Plg-bU-e35"/>
+                        <constraint firstItem="PXu-eX-60H" firstAttribute="top" secondItem="Jq4-Ma-pH7" secondAttribute="top" constant="15" id="Vvx-Nn-Udk"/>
+                        <constraint firstAttribute="height" constant="64" id="bvY-Hc-zkN"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="qqM-FD-mcV"/>
+                        <constraint firstItem="c7K-RE-DbD" firstAttribute="leading" secondItem="Jq4-Ma-pH7" secondAttribute="leading" constant="8" id="s6D-nO-YKd"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="vnP-u4-1AK"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="wD4-Xn-K4k"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pPa-q7-vIv">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fI2-kx-v65"/>
+                        <outlet property="delegate" destination="-1" id="pxO-0j-JWb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="pPa-q7-vIv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Gi-tT-A94"/>
+                <constraint firstAttribute="trailing" secondItem="pPa-q7-vIv" secondAttribute="trailing" id="1gC-I3-Byq"/>
+                <constraint firstItem="Jq4-Ma-pH7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GYo-lf-rIw"/>
+                <constraint firstAttribute="trailing" secondItem="Jq4-Ma-pH7" secondAttribute="trailing" id="Qjy-jJ-Ait"/>
+                <constraint firstItem="Jq4-Ma-pH7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SdK-UW-Smk"/>
+                <constraint firstAttribute="bottom" secondItem="pPa-q7-vIv" secondAttribute="bottom" id="rOZ-Mp-TFm"/>
+                <constraint firstItem="pPa-q7-vIv" firstAttribute="top" secondItem="Jq4-Ma-pH7" secondAttribute="bottom" id="uhe-PN-aEC"/>
+            </constraints>
+            <point key="canvasLocation" x="444" y="362"/>
+        </view>
+    </objects>
+</document>

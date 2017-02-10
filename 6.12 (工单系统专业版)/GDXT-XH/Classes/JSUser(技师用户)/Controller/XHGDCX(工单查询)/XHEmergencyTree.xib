@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XHEmergencyTree">
+            <connections>
+                <outlet property="backBtn" destination="PU3-8g-emu" id="igv-rE-52w"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLA-id-xjB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 选择工单级别" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuo-lS-ybW">
+                            <rect key="frame" x="60" y="15" width="200" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="BIO-Hz-YWW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU3-8g-emu">
+                            <rect key="frame" x="8" y="24" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="4fv-Zh-jn5"/>
+                                <constraint firstAttribute="height" constant="25" id="VoU-Nx-qj9"/>
+                            </constraints>
+                            <state key="normal" title="左">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="ThB-eu-CMv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1529411765" green="0.64705882349999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="2VQ-bO-5da"/>
+                        <constraint firstItem="uuo-lS-ybW" firstAttribute="leading" secondItem="xLA-id-xjB" secondAttribute="leading" constant="60" id="HMR-uP-azJ"/>
+                        <constraint firstItem="PU3-8g-emu" firstAttribute="leading" secondItem="xLA-id-xjB" secondAttribute="leading" constant="8" id="VSC-pS-osq"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="VV0-eJ-eAt"/>
+                        <constraint firstItem="uuo-lS-ybW" firstAttribute="centerY" secondItem="PU3-8g-emu" secondAttribute="centerY" id="jmN-eR-NCn"/>
+                        <constraint firstItem="uuo-lS-ybW" firstAttribute="top" secondItem="xLA-id-xjB" secondAttribute="top" constant="15" id="oRI-Jj-FW1"/>
+                        <constraint firstAttribute="height" constant="64" id="qCt-Ex-2E6"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="rpL-KC-xh6"/>
+                        <constraint firstAttribute="trailing" secondItem="uuo-lS-ybW" secondAttribute="trailing" constant="60" id="uU3-19-v3G"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="wki-WF-fcu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xLA-id-xjB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hud-VW-7hf"/>
+                <constraint firstAttribute="trailing" secondItem="xLA-id-xjB" secondAttribute="trailing" id="nkE-IL-7PO"/>
+                <constraint firstItem="xLA-id-xjB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tXk-2n-cVf"/>
+            </constraints>
+            <point key="canvasLocation" x="444" y="350"/>
+        </view>
+    </objects>
+</document>

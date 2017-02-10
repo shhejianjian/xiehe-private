@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="XHJieDanFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZ3-xC-WbX">
+                        <rect key="frame" x="25" y="25" width="130" height="49.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <state key="normal" title="待复合">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="checkBtnDidClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nMg-Wk-lBO"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLh-F2-rf6">
+                        <rect key="frame" x="165" y="25" width="130" height="49.5"/>
+                        <color key="backgroundColor" red="0.1529411765" green="0.64705882349999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="结单"/>
+                        <connections>
+                            <action selector="jieDanBtnDidClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Kdh-tF-Pca"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fLh-F2-rf6" secondAttribute="trailing" constant="25" id="6ZC-qc-4rt"/>
+                    <constraint firstAttribute="bottom" secondItem="FZ3-xC-WbX" secondAttribute="bottom" constant="25" id="8gc-dE-uoO"/>
+                    <constraint firstItem="fLh-F2-rf6" firstAttribute="width" secondItem="FZ3-xC-WbX" secondAttribute="width" id="DGJ-Pb-veY"/>
+                    <constraint firstAttribute="bottom" secondItem="fLh-F2-rf6" secondAttribute="bottom" constant="25" id="UJh-MC-hS8"/>
+                    <constraint firstItem="fLh-F2-rf6" firstAttribute="leading" secondItem="FZ3-xC-WbX" secondAttribute="trailing" constant="10" id="ZJX-qb-scq"/>
+                    <constraint firstItem="fLh-F2-rf6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="dS4-SL-uYH"/>
+                    <constraint firstItem="FZ3-xC-WbX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="ign-9t-Kga"/>
+                    <constraint firstItem="FZ3-xC-WbX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="mrX-QD-VHS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XHZGYGQViewController">
+            <connections>
+                <outlet property="noDataLabel" destination="MJO-re-OxF" id="ead-Hn-nLw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="ygqTableView" destination="wKL-8S-xY0" id="4cn-gG-k7m"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wKL-8S-xY0">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="464"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="iTe-qg-Yvc"/>
+                        <outlet property="delegate" destination="-1" id="N0Q-jw-yOg"/>
+                    </connections>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无待接单的工单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJO-re-OxF">
+                    <rect key="frame" x="104.5" y="211.5" width="112" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wKL-8S-xY0" secondAttribute="bottom" constant="104" id="BEY-aj-SwK"/>
+                <constraint firstAttribute="trailing" secondItem="wKL-8S-xY0" secondAttribute="trailing" id="NF4-i8-1re"/>
+                <constraint firstItem="wKL-8S-xY0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OkQ-Ky-dgU"/>
+                <constraint firstItem="wKL-8S-xY0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZCD-aS-vZN"/>
+                <constraint firstItem="MJO-re-OxF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-64" id="y87-fv-s97"/>
+                <constraint firstItem="MJO-re-OxF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="z76-EI-hzA"/>
+            </constraints>
+            <point key="canvasLocation" x="416" y="269"/>
+        </view>
+    </objects>
+</document>
